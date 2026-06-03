@@ -27,8 +27,18 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
+        
+    - name: EmployeeAddressService
+      run: mvn clean package -f EmployeeAddressService/pom.xml
+
+    - name : EmployeeConfigServer
+      run: mvn clean package -f EmployeeConfigServer/pom.xml
+
+    - name: EmployeeUrekaServer
+      run: mvn clean package -f EmployeeUrekaServer/pom.xml
+
+    - name: employee-service
+      run: mvn clean package -f employee-service/pom.xml
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
