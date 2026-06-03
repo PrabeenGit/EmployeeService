@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: employee-service
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/PrabeenBrahma/EmployeeService.git
+          default-label: main
+          clone-on-start: true

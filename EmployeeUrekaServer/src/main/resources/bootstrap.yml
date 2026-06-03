@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    config:
+      name: employee-eureka-server
+      uri: http://localhost:8080
+
