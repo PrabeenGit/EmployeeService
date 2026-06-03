@@ -10,6 +10,7 @@ public class EmployeeUrekaServerApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EmployeeUrekaServerApplication.class, args);
+		System.out.println("Hi");
 	}
 
 }
